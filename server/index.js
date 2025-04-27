@@ -13,10 +13,10 @@ app.use(express.urlencoded({ limit: '50mb', extended: true })); // 增加 URL �
 
 // 数据库连接池
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || '10.88.92.86',
-  port: process.env.DB_PORT || 13306,
+  host: process.env.DB_HOST || '10.22.22.22',
+  port: process.env.DB_PORT || 3306,
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || 'wuweixiong',
+  password: process.env.DB_PASSWORD || 'xxxxxx',
   database: process.env.DB_NAME || 'txt2sql',
   waitForConnections: true,
   connectionLimit: 10,
